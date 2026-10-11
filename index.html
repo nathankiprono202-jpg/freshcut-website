@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshCut Barbershop</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: auto;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+    .logo { font-size: 24px; font-weight: bold; }
+    .logo span { color: #d6a85c; }
+    
+   
+.hero {
+  padding: 90px 8%;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background:
+    linear-gradient(
+      90deg,
+      #111 0%,
+      rgba(17, 17, 17, 0.96) 30%,
+      rgba(17, 17, 17, 0.65) 58%,
+      rgba(17, 17, 17, 0.15) 100%
+    ),
+    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=90")
+    center right / cover no-repeat;
+
+  border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+  max-width: 700px;
+  letter-spacing: -2px;
+  margin: 15px 0;
+}
+
+.hero p {
+  max-width: 460px;
+  color: #d0d0d0;
+  line-height: 1.8;
+}
+
+
+    h1 { font-size: clamp(38px, 7vw, 66px); line-height: 1.1; }
+    h1 span { color: #d6a85c; }
+    .button {
+      display: inline-block;
+      background: #d6a85c;
+      color: #111;
+      padding: 12px 22px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    section { padding: 45px 8%; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .service {
+      padding: 22px;
+      background: #202020;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    .price { color: #d6a85c; font-weight: bold; }
+    footer {
+      padding: 25px 8%;
+      border-top: 1px solid #333;
+      color: #bbb;
+    }
+    
+/* Mobile responsive design */
+@media (max-width: 600px) {
+  header {
+    padding: 18px 5%;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  header div:last-child {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 75px 6%;
+    background-position: 60% center;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 10vw, 48px);
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .button {
+    padding: 13px 18px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 35px 6%;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service {
+    padding: 18px;
+  }
+
+  footer {
+    padding: 22px 6%;
+    font-size: 13px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FRESH<span>CUT.</span></div>
+    <div>Style starts here.</div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p>YOUR NEIGHBOURHOOD BARBERSHOP</p>
+      <h1>LOOK SHARP.<br><span>FEEL CONFIDENT.</span></h1>
+      <p>Fresh fades, clean cuts and a style that speaks for you.</p>
+
+
+<a class="button"
+   href="https://wa.me/254712345678?text=Hello%20FreshCut%2C%20I%27d%20like%20to%20book%20a%20haircut."
+   target="_blank"
+   rel="noopener noreferrer">
+  Book on WhatsApp
+</a>
+
+    </div>
+
+    <section>
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Regular Haircut</h3>
+          <p>Clean and classic.</p>
+          <p class="price">KSh 300</p>
+        </div>
+        <div class="service">
+          <h3>Skin Fade</h3>
+          <p>A sharp, modern finish.</p>
+          <p class="price">KSh 500</p>
+        </div>
+        <div class="service">
+          <h3>Haircut & Beard</h3>
+          <p>The complete look.</p>
+          <p class="price">KSh 700</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Visit Us</h2>
+      <p>Location: Nakuru, Kenya</p>
+      <p>Opening hours: Monday–Saturday, 8 AM–8 PM</p>
+      <p>Call or WhatsApp us to book your next cut.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 FreshCut Barbershop · Demo website</footer>
+</body>
+</html>
