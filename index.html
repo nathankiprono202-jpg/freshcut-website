@@ -5,217 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FreshCut Barbershop</title>
-  <style>    
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  min-height: auto;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #fff;
-  line-height: 1.6;
-}
-
-    header {
-      padding: 20px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #333;
-    }
-    .logo { font-size: 24px; font-weight: bold; }
-    .logo span { color: #d6a85c; }
-    
-   
-.hero {
-  padding: 90px 8%;
-  min-height: 560px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  background:
-    linear-gradient(
-      90deg,
-      #111 0%,
-      rgba(17, 17, 17, 0.96) 30%,
-      rgba(17, 17, 17, 0.65) 58%,
-      rgba(17, 17, 17, 0.15) 100%
-    ),
-    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=90")
-    center right / cover no-repeat;
-
-  border-bottom: 1px solid #333;
-}
-
-.portfolio-label {
-  color: #d4af37;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
-}
-
-.hero h1 {
-  max-width: 700px;
-  letter-spacing: -2px;
-  margin: 15px 0;
-}
-
-.hero p {
-  max-width: 460px;
-  color: #d0d0d0;
-  line-height: 1.8;
-}
-
-
-    h1 { font-size: clamp(38px, 7vw, 66px); line-height: 1.1; }
-    h1 span { color: #d6a85c; }
-    .button {
-      display: inline-block;
-      background: #d6a85c;
-      color: #111;
-      padding: 12px 22px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 12px;
-    }
-    section { padding: 45px 8%; }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-    }
-    .service {
-      padding: 22px;
-      background: #202020;
-      border: 1px solid #333;
-      border-radius: 8px;
-    }
-    .price { color: #d6a85c; font-weight: bold; }
-    footer {
-      padding: 25px 8%;
-      border-top: 1px solid #333;
-      color: #bbb;
-    }
-    
-/* Mobile responsive design */
-
-/* Desktop header and navigation */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 8%;
-  background: #111;
-  border-bottom: 1px solid #333;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-
-nav a {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: 14px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-nav a:hover {
-  color: #d4af37;
-  border-bottom-color: #d4af37;
-}
-
-.tagline {
-  color: #ccc;
-  font-size: 14px;
-}
-
-/* Mobile styles */
-@media (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-    padding: 18px 5%;
-    gap: 10px;
-  }
-
-  .logo {
-    font-size: 21px;
-  }
-
-  nav {
-    order: 3;
-    width: 100%;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  nav a {
-    font-size: 12px;
-  }
-
-  .tagline {
-    font-size: 12px;
-  }
-
-  .hero {
-    min-height: 480px;
-    padding: 75px 6%;
-    background-position: 60% center;
-  }
-
-  .hero h1 {
-    font-size: clamp(36px, 10vw, 48px);
-    letter-spacing: -1px;
-  }
-
-  .hero p {
-    font-size: 14px;
-    max-width: 100%;
-  }
-
-  .button {
-    padding: 13px 18px;
-    font-size: 14px;
-  }
-
-  section {
-    padding: 35px 6%;
-  }
-
-  .services {
-    grid-template-columns: 1fr;
-  }
-
-  .service {
-    padding: 18px;
-  }
-
-  footer {
-    padding: 22px 6%;
-    font-size: 13px;
-  }
-}
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
  
 <header>
@@ -233,24 +25,40 @@ nav a:hover {
 
 
   <main>
-    <div id="Home" class="hero">
-      <p>YOUR NEIGHBOURHOOD BARBERSHOP</p>
-      <p class="portfolio-label">WEBSITE DEMO · BARBERSHOP CONCEPT</p>
-      <h1>LOOK SHARP.<br><span>FEEL CONFIDENT.</span></h1>
-      <p>Fresh fades, clean cuts and a style that speaks for you.</p>
+<div id="home" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">YOUR NEIGHBOURHOOD BARBERSHOP</p>
 
+    <p class="portfolio-label">
+      WEBSITE DEMO · BARBERSHOP CONCEPT
+    </p>
 
-<a class="button"
-   href="https://wa.me/254712345678?text=Hello%20FreshCut%2C%20I%27d%20like%20to%20book%20a%20haircut."
-   target="_blank"
-   rel="noopener noreferrer">
-  Book on WhatsApp
-</a>
+    <h1>LOOK SHARP.<br><span>FEEL CONFIDENT.</span></h1>
 
-    </div>
+    <p class="hero-description">
+      Fresh fades, clean cuts and a style that speaks for you.
+    </p>
 
-    <section id="services">
-      <h2>Our Services</h2>
+    <a class="button"
+       href="https://wa.me/254712345678?text=Hello%20FreshCut%2C%20I%27d%20like%20to%20book%20a%20haircut."
+       target="_blank"
+       rel="noopener noreferrer">
+      Book on WhatsApp
+    </a>
+  </div>
+
+  <div class="hero-image"></div>
+</div>
+
+<section id="services">
+  <div class="section-heading">
+    <p class="section-eyebrow">THE FRESHCUT EXPERIENCE</p>
+    <h2>Our <span>Services</span></h2>
+    <div class="heading-divider"></div>
+    <p class="section-description">
+      Precision cuts. Timeless style. Every single visit.
+    </p>
+  </div>
       <div class="services">
         <div class="service">
           <h3>Regular Haircut</h3>
@@ -293,6 +101,46 @@ nav a:hover {
     </section>
   </main>
 
-  <footer>© 2026 FreshCut Barbershop · Demo website</footer>
+
+<footer>
+  <div class="footer-content">
+
+    <div class="footer-brand">
+      <div class="logo">FRESH<span>CUT.</span></div>
+      <p>Look sharp. Feel confident.</p>
+      <p class="footer-description">
+        Fresh fades, clean cuts and timeless style.
+        Your next great look starts here.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#services">Our Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Visit Us</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Get In Touch</h3>
+      <p>Nakuru, Kenya</p>
+      <p>Monday – Saturday</p>
+      <p>8:00 AM – 8:00 PM</p>
+      <a
+        href="https://wa.me/254712345678"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Book on WhatsApp ↗</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 FreshCut Barbershop. All rights reserved.</p>
+    <p class="demo-note">Portfolio demo concept · Not a real business listing</p>
+  </div>
+</footer>
+
 </body>
 </html>
