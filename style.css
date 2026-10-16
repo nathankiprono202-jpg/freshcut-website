@@ -384,11 +384,53 @@ body {
 }
 
 #about .about-value {
+  position: relative;
   min-width: 0;
   padding: 18px 16px;
   border: 1px solid rgba(212, 175, 55, 0.17);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.025);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+#about .about-value::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f0cf83, #d4af37);
+  transition: width 0.25s ease;
+}
+
+#about .about-value:hover,
+#about .about-value:focus-within {
+  transform: translateY(-7px);
+  border-color: #d4af37;
+  background-color: #252116;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 0 20px rgba(212, 175, 55, 0.16);
+}
+
+#about .about-value:hover::before,
+#about .about-value:focus-within::before {
+  width: 100%;
+}
+
+#about .about-value:hover > span,
+#about .about-value:focus-within > span {
+  color: #ffe8a8;
+}
+
+#about .about-value:hover h3,
+#about .about-value:focus-within h3 {
+  color: #ffe8a8;
+}
+
+#about .about-value:hover p,
+#about .about-value:focus-within p {
+  color: #d2c9b5;
 }
 
 #about .about-value > span {
